@@ -1,0 +1,52 @@
+{
+  "name": "EPFL ServiceNow Extension",
+  "description": "EPFL ServiceNow Extension",
+  "manifest_version": 2,
+  "version": "0.0.1",
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "48.0.0",
+      "id": "epfl-servicenow-extension@example.com"
+    }
+  },
+
+  "content_scripts": [{
+    "js": [ "js/contentscript.js" ],
+    "matches": [
+      "*://it.epfl.ch/*",
+      "*://infowww.epfl.ch/*"
+    ],
+    "run_at": "document_end"
+  }],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "default_title": "EPFL ServiceNow Extension",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "*://it.epfl.ch/*",
+    "*://people.epfl.ch/*",
+    "*://search.epfl.ch/*",
+    "*://infowww.epfl.ch/*"
+  ],
+
+  "icons": {
+    "48": "images/icon-48.png"
+  },
+
+  "web_accessible_resources": [
+    "css/themes/*.css"
+  ]
+}
