@@ -10,6 +10,8 @@ $left-card-width: 310px
 $right-card-width: 250px
 $sid-profile-width: 150px
 $people-profile-width: 150px
+$girl-color: #e91e63
+$boy-color: #0277bd
 
 body
   margin: 0
@@ -33,15 +35,27 @@ body
   span
     display: block
 
+.girl
+  .left-card
+    background-color: $girl-color
+  .right-card
+    color: $girl-color
+
+.boy
+  .left-card
+    background-color: $boy-color
+  .right-card
+    color: $boy-color
+
 .left-card
   width: $left-card-width
-  background-color: #ae0010
+  background-color: $girl-color
   float: left
 
 .right-card
   width: $right-card-width
   float: right
-  color: #ae0010
+  color: $girl-color
 
   h2
     margin: 0

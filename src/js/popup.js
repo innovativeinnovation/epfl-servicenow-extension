@@ -62,6 +62,7 @@
         var content = this.responseText;
         var regExPhoto = /src="(\/photos\/.*)"/;
         var regExDate = /<td colspan="1">(\d{2}\.\d{2}\.\d{4})<\/a><\/td>/;
+        var regExGender = /<td colspan="1">(Féminin|Masculin)<\/a><\/td>/;
         if (content.match(regExPhoto)) {
           var match = regExPhoto.exec(content);
           popupApp.getSidImage(match[1]);
@@ -69,6 +70,18 @@
         if (content.match(regExDate)) {
           var dates = regExDate.exec(content);
           document.getElementById('birthdate').textContent = dates[1];
+        }
+        if (content.match(regExGender)) {
+          var gender = regExGender.exec(content);
+          if (gender[1] === 'Féminin') {
+            document.body.classList.add('girl');
+            document.getElementById('people-image').src =
+              chrome.extension.getURL('images/default-girl.jpg');
+          } else {
+            document.body.classList.add('boy');
+            document.getElementById('people-image').src =
+              chrome.extension.getURL('images/default-boy.jpg');
+          }
         }
       });
       oReq.open('GET', url);
