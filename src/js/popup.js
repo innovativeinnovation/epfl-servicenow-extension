@@ -8,6 +8,9 @@
 
   var popupApp = {
 
+    username: 'USERNAME',
+    password: 'PASSWORD',
+
     initImgProfile: function() {
       var images = document.getElementsByClassName('img-profile');
       for (var i = 0; i < images.length; i++) {
@@ -39,6 +42,18 @@
       popupApp.getPeopleInfo(sciper);
     },
 
+    getSidImage: function(path) {
+      var url = 'https://infowww.epfl.ch' + path;
+      var oReq = new XMLHttpRequest();
+      oReq.open('GET', url);
+      oReq.addEventListener('load', function() {
+        document.getElementById('sid-image').src = url;
+      });
+      oReq.setRequestHeader('Authorization', 'Basic ' +
+        btoa(popupApp.username + ':' + popupApp.password));
+      oReq.send();
+    },
+
     getSidInfo: function(sciper) {
       var url = 'https://infowww.epfl.ch/imoniteur/Sidonl.Afficher' +
         '?px_Personne=' + sciper;
@@ -49,8 +64,7 @@
         var regExDate = /<td colspan="1">(\d{2}\.\d{2}\.\d{4})<\/a><\/td>/;
         if (content.match(regExPhoto)) {
           var match = regExPhoto.exec(content);
-          document.getElementById('sid-image').src =
-            'https://infowww.epfl.ch' + match[1];
+          popupApp.getSidImage(match[1]);
         }
         if (content.match(regExDate)) {
           var dates = regExDate.exec(content);
@@ -59,7 +73,7 @@
       });
       oReq.open('GET', url);
       oReq.setRequestHeader('Authorization', 'Basic ' +
-        btoa('USERNAME:PASSWORD'));
+        btoa(popupApp.username + ':' + popupApp.password));
       oReq.send();
     },
 
