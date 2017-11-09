@@ -42,6 +42,14 @@
       popupApp.getPeopleInfo(sciper);
     },
 
+    calculateYears: function(birthdate) {
+      var datePart = birthdate.split('.');
+      var date1 = new Date(datePart[2], datePart[1] - 1, datePart[0]);
+      var date2 = new Date();
+      var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+      return Math.floor(timeDiff / (1000 * 3600 * 24 * 365.2425));
+    },
+
     getSidImage: function(path) {
       var url = 'https://infowww.epfl.ch' + path;
       var oReq = new XMLHttpRequest();
@@ -69,7 +77,8 @@
         }
         if (content.match(regExDate)) {
           var dates = regExDate.exec(content);
-          document.getElementById('birthdate').textContent = dates[1];
+          document.getElementById('birthdate').textContent =
+            popupApp.calculateYears(dates[1]) + ' years (' + dates[1] + ')';
         }
         if (content.match(regExGender)) {
           var gender = regExGender.exec(content);
