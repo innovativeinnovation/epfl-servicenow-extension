@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  EPFL ServiceNow Extension.
+  A custom web extension to quickly retrieve essentials information about users.
 </p>
 
 <p align="center">
@@ -19,6 +19,29 @@
 </p>
 
 ---
+
+Overview
+--------
+
+A custom web extension to quickly retrieve essentials information about users.
+
+Features
+--------
+
+  * Quick access to user informations
+  * Multiple colors themes for ServiceNow
+  
+Compatibilities
+---------------
+
+  * Chrome
+  * Firefox
+  * Opera
+
+Screenshot
+----------
+
+![screenshot](https://raw.githubusercontent.com/epfl-devrun/epfl-servicenow-extension/master/docs/readme/screenshot.png)
 
 Contributing
 ------------
