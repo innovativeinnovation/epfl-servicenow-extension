@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v1.1.0 / 2017-11-17
+
+  - Add new halloween theme
+  - Add new purple theme
+  - Fix aside menu
+
 ### v1.0.0 / 2017-11-16
 
   - Display age and birthdate
