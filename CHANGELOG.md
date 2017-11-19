@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.2.0 / 2017-11-19
+
+  - Add new deep purple theme
+  - Add new indigo theme
+
 ### v1.1.0 / 2017-11-17
 
   - Add new halloween theme
