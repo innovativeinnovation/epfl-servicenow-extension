@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.3.0 / 2017-11-24
+
+  - Add new red theme
+  - Add new teal theme
+
 ### v1.2.0 / 2017-11-19
 
   - Add new deep purple theme
