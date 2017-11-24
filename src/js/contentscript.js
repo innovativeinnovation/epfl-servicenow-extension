@@ -8,21 +8,38 @@
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     if (request === 'getSciper') {
-      var sciper  = null;
-      var frameId = document.getElementById('gsft_main');
-      if (frameId) {
-        var frameContent = frameId.contentWindow.document.body.innerHTML;
-        var regExSciper  = /"employee_number":"(\d+)"/;
-
-        if (frameContent.match(regExSciper)) {
-          var match = regExSciper.exec(frameContent);
-          sciper = match[1];
-        }
-      }
-      sendResponse(sciper);
+      sendResponse(getSciper());
     }
   }
 );
+
+function getSciper() {
+  var sciper  = null;
+  var frameId = document.getElementById('gsft_main');
+  if (frameId) {
+    sciper = extractSciperFromTicket(
+      frameId.contentWindow.document.body.innerHTML
+    ) || extractSciperFromUser(frameId.contentWindow.document);
+  } else {
+    sciper = extractSciperFromTicket(document.body.innerHTML) ||
+      extractSciperFromUser(document);
+  }
+  return sciper;
+}
+
+function extractSciperFromUser(doc) {
+  return doc.getElementById('sys_readonly.sys_user.user_name').value;
+}
+
+function extractSciperFromTicket(content) {
+  var regExSciper  = /"employee_number":"(\d+)"/;
+
+  if (content.match(regExSciper)) {
+    var match = regExSciper.exec(content);
+    return match[1];
+  }
+  return null;
+}
 
 function applyThemeOption() {
   chrome.storage.local.get('colorTheme', function(color) {
