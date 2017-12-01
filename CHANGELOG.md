@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.4.0 / 2017-12-01
+
+  - Add new cyan theme
+  - Add new light blue theme
+
 ### v1.3.0 / 2017-11-24
 
   - Add new red theme
