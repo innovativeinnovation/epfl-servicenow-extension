@@ -2,7 +2,7 @@
   "name": "EPFL ServiceNow Extension",
   "description": "A custom web extension to quickly retrieve essentials information about users",
   "manifest_version": 2,
-  "version": "1.4.0",
+  "version": "1.5.0",
 
   "applications": {
     "gecko": {
