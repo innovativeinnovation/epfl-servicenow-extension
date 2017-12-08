@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.6.0 / 2017-12-08
+
+  - Add new brown theme
+  - Add new deep orange theme
+
 ### v1.5.0 / 2017-12-04
 
   - Add new blue grey theme
