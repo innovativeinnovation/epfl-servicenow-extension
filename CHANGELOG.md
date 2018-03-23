@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v1.6.1 / 2018-03-23
+
+  - Fix host permission (it.epfl.ch -> support.epfl.ch)
+
 ### v1.6.0 / 2017-12-08
 
   - Add new brown theme
