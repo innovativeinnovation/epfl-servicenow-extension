@@ -14,7 +14,7 @@
   "content_scripts": [{
     "js": [ "js/contentscript.js" ],
     "matches": [
-      "*://it.epfl.ch/*",
+      "*://support.epfl.ch/*",
       "*://infowww.epfl.ch/*"
     ],
     "run_at": "document_end"
@@ -36,7 +36,7 @@
   "permissions": [
     "tabs",
     "storage",
-    "*://it.epfl.ch/*",
+    "*://support.epfl.ch/*",
     "*://people.epfl.ch/*",
     "*://search.epfl.ch/*",
     "*://infowww.epfl.ch/*"
