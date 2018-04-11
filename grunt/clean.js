@@ -3,8 +3,10 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   build: {
-    src: ['dist'],
-  },
+    src: ['dist']
+  }
 };

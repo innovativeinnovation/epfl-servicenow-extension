@@ -5,23 +5,23 @@
 
 'use strict';
 
-function saveOptions() {
+function saveOptions () {
   var theme = document.getElementById('theme').value;
   chrome.storage.local.set({
-    colorTheme: theme,
-  }, function() {
+    colorTheme: theme
+  }, function () {
     var status = document.getElementById('status');
     status.textContent = 'Options saved.';
-    setTimeout(function() {
+    setTimeout(function () {
       status.textContent = '';
     }, 750);
   });
 }
 
-function restoreOptions() {
+function restoreOptions () {
   chrome.storage.local.get({
-    colorTheme: 'halloween',
-  }, function(items) {
+    colorTheme: 'halloween'
+  }, function (items) {
     document.getElementById('theme').value = items.colorTheme;
   });
 }

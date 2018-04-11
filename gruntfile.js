@@ -3,12 +3,12 @@
  * See the LICENSE file for more details.
  */
 
-module.exports = function(grunt) {
-  'use strict';
+'use strict';
 
+module.exports = function (grunt) {
   require('load-grunt-config')(grunt, {
     data: {
-      secret: grunt.file.readJSON('secret.json'),
-    },
+      secret: grunt.file.readJSON('secret.json')
+    }
   });
 };
