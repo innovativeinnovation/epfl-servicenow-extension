@@ -3,27 +3,29 @@
  * See the LICENSE file for more details.
  */
 
+'use strict';
+
 module.exports = {
   build: {
     options: {
       patterns: [{
         match: /USERNAME/g,
-        replacement: '<%= secret.username %>',
-      },{
+        replacement: '<%= secret.username %>'
+      }, {
         match: /PASSWORD/g,
-        replacement: '<%= secret.password %>',
-      },],
+        replacement: '<%= secret.password %>'
+      }]
     },
     files: [{
       expand: true,
       flatten: true,
       src: ['src/js/popup.js'],
-      dest: 'dist/chrome/js/',
-    },{
+      dest: 'dist/chrome/js/'
+    }, {
       expand: true,
       flatten: true,
       src: ['src/js/popup.js'],
-      dest: 'dist/firefox/js/',
-    },],
-  },
+      dest: 'dist/firefox/js/'
+    }]
+  }
 };

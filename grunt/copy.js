@@ -3,9 +3,9 @@
  * See the LICENSE file for more details.
  */
 
-module.exports = function(grunt, options) {
-  'use strict';
+'use strict';
 
+module.exports = function (grunt, options) {
   return {
     buildChrome: {
       files: [{
@@ -13,28 +13,28 @@ module.exports = function(grunt, options) {
         cwd: 'src/',
         src: ['js/**', 'images/**', '*.html', 'manifest.json'],
         dest: 'dist/chrome/',
-        nonull: true,
-      },],
+        nonull: true
+      }]
     },
     buildFirefox: {
       files: [{
         expand: true,
         cwd: 'src/',
-        src: ['js/**', 'images/**', '*.html',],
+        src: ['js/**', 'images/**', '*.html'],
         dest: 'dist/firefox/',
-        nonull: true,
-      },{
+        nonull: true
+      }, {
         expand: true,
         cwd: 'src/',
-        src: ['manifest.firefox.json',],
+        src: ['manifest.firefox.json'],
         dest: 'dist/firefox/',
         nonull: true,
-        rename: function(destBase, destPath) {
+        rename: function (destBase, destPath) {
           return destBase + destPath.replace(
             'manifest.firefox.json', 'manifest.json'
           );
-        },
-      },],
-    },
+        }
+      }]
+    }
   };
 };

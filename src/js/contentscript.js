@@ -6,15 +6,15 @@
 'use strict';
 
 chrome.runtime.onMessage.addListener(
-  function(request, sender, sendResponse) {
+  function (request, sender, sendResponse) {
     if (request === 'getSciper') {
       sendResponse(getSciper());
     }
   }
 );
 
-function getSciper() {
-  var sciper  = null;
+function getSciper () {
+  var sciper = null;
   var frameId = document.getElementById('gsft_main');
   if (frameId) {
     sciper = extractSciperFromTicket(
@@ -27,12 +27,12 @@ function getSciper() {
   return sciper;
 }
 
-function extractSciperFromUser(doc) {
+function extractSciperFromUser (doc) {
   return doc.getElementById('sys_readonly.sys_user.user_name').value;
 }
 
-function extractSciperFromTicket(content) {
-  var regExSciper  = /"employee_number":"(\d+)"/;
+function extractSciperFromTicket (content) {
+  var regExSciper = /"employee_number":"(\d+)"/;
 
   if (content.match(regExSciper)) {
     var match = regExSciper.exec(content);
@@ -41,20 +41,19 @@ function extractSciperFromTicket(content) {
   return null;
 }
 
-function applyThemeOption() {
-  chrome.storage.local.get('colorTheme', function(color) {
+function applyThemeOption () {
+  chrome.storage.local.get('colorTheme', function (color) {
     if (!color.colorTheme) {
       color.colorTheme = 'halloween';
     }
 
-    var link  = document.createElement('link');
+    var link = document.createElement('link');
     link.href = chrome.extension.getURL(
       'css/themes/' + color.colorTheme + '.css'
     );
     link.type = 'text/css';
-    link.rel  = 'stylesheet';
+    link.rel = 'stylesheet';
     document.getElementsByTagName('head')[0].appendChild(link);
-
   });
 }
 
