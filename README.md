@@ -16,6 +16,9 @@
   <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-servicenow-extension/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
+  <a href='https://github.com/epfl-devrun/epfl-servicenow-extension/tags'>
+    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/epfl-devrun/epfl-servicenow-extension.svg" />
+  </a>
 </p>
 
 ---
