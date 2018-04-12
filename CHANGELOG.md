@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.7.0 / 2018-04-12
+
+  - Add badge GitHub tag on readme
+  - Move to eslint
+  - Update copyright date
+  - Disable `package-lock.json`
+
 ### v1.6.1 / 2018-03-23
 
   - Fix host permission (it.epfl.ch -> support.epfl.ch)
