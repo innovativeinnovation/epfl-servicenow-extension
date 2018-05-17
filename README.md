@@ -10,8 +10,8 @@
   <a href="https://travis-ci.org/epfl-devrun/epfl-servicenow-extension">
     <img alt="Travis Status" src="https://travis-ci.org/epfl-devrun/epfl-servicenow-extension.svg?branch=master">
   </a>
-  <a href='https://gemnasium.com/github.com/epfl-devrun/epfl-servicenow-extension'>
-    <img alt="Dependency Status" src="https://gemnasium.com/badges/github.com/epfl-devrun/epfl-servicenow-extension.svg" />
+  <a href="https://david-dm.org/epfl-devrun/epfl-servicenow-extension">
+    <img alt="Dependency Status" src="https://david-dm.org/epfl-devrun/epfl-servicenow-extension/status.svg"/>
   </a>
   <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-servicenow-extension/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
