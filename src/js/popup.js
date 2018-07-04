@@ -100,11 +100,11 @@
     },
 
     getPeopleImage: function (sciper) {
-      var url = 'https://people.epfl.ch/cgi-bin/people/getPhoto?id=' + sciper;
+      var url = 'https://people.epfl.ch/private/common/photos/links/' + sciper;
       var oReq = new XMLHttpRequest();
       oReq.addEventListener('load', function () {
-        var contentType = oReq.getResponseHeader('Content-Type');
-        if (contentType === 'image/jpeg') {
+        var status = oReq.status;
+        if (status === 200) {
           document.getElementById('people-image').src = url;
         }
       });
