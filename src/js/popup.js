@@ -134,8 +134,10 @@
       var oReq = new XMLHttpRequest();
       oReq.addEventListener('load', function () {
         var data = JSON.parse(this.responseText);
-        document.getElementById('name').textContent =
-          data[0].firstname + ' ' + data[0].name;
+        if (data[0] && data[0].firstname && data[0].name) {
+          document.getElementById('name').textContent =
+            data[0].firstname + ' ' + data[0].name;
+        }
       });
       oReq.open('GET', url);
       oReq.send();
