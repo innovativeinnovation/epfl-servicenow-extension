@@ -12,6 +12,7 @@ $sid-profile-width: 150px
 $people-profile-width: 150px
 $girl-color: #e91e63
 $boy-color: #0277bd
+$neutral-color: #a8adb4
 
 body
   margin: 0
@@ -47,15 +48,21 @@ body
   .right-card
     color: $boy-color
 
+.neutral
+  .left-card
+    background-color: $neutral-color
+  .right-card
+    color: $neutral-color
+
 .left-card
   width: $left-card-width
-  background-color: $girl-color
+  background-color: $neutral-color
   float: left
 
 .right-card
   width: $right-card-width
   float: right
-  color: $girl-color
+  color: $neutral-color
 
   h2
     margin: 0
