@@ -36,6 +36,12 @@
       });
     },
 
+    updateSidImageOnError: function () {
+      document.getElementById('sid-image').src =
+        chrome.extension.getURL('images/no-photo.jpg');
+      document.body.classList.add('neutral');
+    },
+
     updateContent: function (sciper) {
       popupApp.getPeopleImage(sciper);
       popupApp.getSidInfo(sciper);
@@ -55,7 +61,12 @@
       var oReq = new XMLHttpRequest();
       oReq.open('GET', url);
       oReq.addEventListener('load', function () {
-        document.getElementById('sid-image').src = url;
+        var status = oReq.status;
+        if (status === 200) {
+          document.getElementById('sid-image').src = url;
+        } else {
+          popupApp.updateSidImageOnError();
+        }
       });
       oReq.setRequestHeader('Authorization', 'Basic ' +
         btoa(popupApp.username + ':' + popupApp.password));
@@ -66,6 +77,7 @@
       var url = 'https://infowww.epfl.ch/imoniteur/Sidonl.Afficher' +
         '?px_Personne=' + sciper;
       var oReq = new XMLHttpRequest();
+      oReq.timeout = 2000;
       oReq.addEventListener('load', function () {
         var content = this.responseText;
         var regExPhoto = /src="(\/photos\/.*)"/;
@@ -84,14 +96,16 @@
           var gender = regExGender.exec(content);
           if (gender[1] === 'Féminin') {
             document.body.classList.add('girl');
-            document.getElementById('people-image').src =
-              chrome.extension.getURL('images/default-girl.jpg');
           } else {
             document.body.classList.add('boy');
-            document.getElementById('people-image').src =
-              chrome.extension.getURL('images/default-boy.jpg');
           }
         }
+      });
+      oReq.addEventListener('error', function () {
+        popupApp.updateSidImageOnError();
+      });
+      oReq.addEventListener('timeout', function () {
+        popupApp.updateSidImageOnError();
       });
       oReq.open('GET', url);
       oReq.setRequestHeader('Authorization', 'Basic ' +
@@ -106,6 +120,9 @@
         var status = oReq.status;
         if (status === 200) {
           document.getElementById('people-image').src = url;
+        } else {
+          document.getElementById('people-image').src =
+            chrome.extension.getURL('images/no-photo.jpg');
         }
       });
       oReq.open('GET', url);
