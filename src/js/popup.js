@@ -11,6 +11,11 @@
     username: 'USERNAME',
     password: 'PASSWORD',
 
+    start: function () {
+      this.initImgProfile();
+      this.getSciper(this.updateContent);
+    },
+
     initImgProfile: function () {
       var images = document.getElementsByClassName('img-profile');
       for (var i = 0; i < images.length; i++) {
@@ -115,40 +120,41 @@
 
     getPeopleImage: function (sciper) {
       var url = 'https://people.epfl.ch/private/common/photos/links/' + sciper;
-      var oReq = new XMLHttpRequest();
-      oReq.addEventListener('load', function () {
-        var status = oReq.status;
-        if (status === 200) {
-          document.getElementById('people-image').src = url;
-        } else {
-          document.getElementById('people-image').src =
-            chrome.extension.getURL('images/no-photo.jpg');
-        }
+      var xhr = new XMLHttpRequest();
+      xhr.addEventListener('load', function () {
+        popupApp.onPeopleImage(xhr, url);
       });
-      oReq.open('GET', url);
-      oReq.send();
+      xhr.open('GET', url);
+      xhr.send();
+    },
+
+    onPeopleImage: function (xhr, url) {
+      var status = xhr.status;
+      if (status === 200) {
+        document.getElementById('people-image').src = url;
+      } else {
+        document.getElementById('people-image').src =
+          chrome.extension.getURL('images/no-photo.jpg');
+      }
     },
 
     getPeopleInfo: function (sciper) {
       var url = 'https://search.epfl.ch/json/ws_search.action?q=' + sciper;
-      var oReq = new XMLHttpRequest();
-      oReq.addEventListener('load', function () {
-        var data = JSON.parse(this.responseText);
-        if (data[0] && data[0].firstname && data[0].name) {
-          document.getElementById('name').textContent =
-            data[0].firstname + ' ' + data[0].name;
-        }
-      });
-      oReq.open('GET', url);
-      oReq.send();
+      var xhr = new XMLHttpRequest();
+      xhr.addEventListener('load', popupApp.onPeopleInfo);
+      xhr.open('GET', url);
+      xhr.send();
     },
 
-    initialize: function () {
-      this.initImgProfile();
-      this.getSciper(this.updateContent);
+    onPeopleInfo: function () {
+      var data = JSON.parse(this.responseText);
+      if (data[0] && data[0].firstname && data[0].name) {
+        document.getElementById('name').textContent =
+          data[0].firstname + ' ' + data[0].name;
+      }
     }
-
   };
 
-  popupApp.initialize();
+  // Entry point
+  popupApp.start();
 })();
