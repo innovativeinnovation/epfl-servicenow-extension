@@ -44,7 +44,10 @@
     updateSidImageOnError: function () {
       document.getElementById('sid-image').src =
         chrome.extension.getURL('images/no-photo.jpg');
-      document.body.classList.add('neutral');
+    },
+
+    applyPopupTheme: function (gender) {
+      document.body.classList.add(gender);
     },
 
     updateContent: function (sciper) {
@@ -71,6 +74,7 @@
           document.getElementById('sid-image').src = url;
         } else {
           popupApp.updateSidImageOnError();
+          popupApp.applyPopupTheme('neutral');
         }
       });
       oReq.setRequestHeader('Authorization', 'Basic ' +
@@ -85,32 +89,40 @@
       oReq.timeout = 2000;
       oReq.addEventListener('load', function () {
         var content = this.responseText;
+        var gender = '';
         var regExPhoto = /src="(\/photos\/.*)"/;
         var regExDate = /<td colspan="1">(\d{2}\.\d{2}\.\d{4})<\/a><\/td>/;
         var regExGender = /<td colspan="1">(Féminin|Masculin)<\/a><\/td>/;
+        if (content.match(regExGender)) {
+          gender = regExGender.exec(content);
+          if (gender[1] === 'Féminin') {
+            popupApp.applyPopupTheme('girl');
+          } else {
+            popupApp.applyPopupTheme('boy');
+          }
+        }
         if (content.match(regExPhoto)) {
           var match = regExPhoto.exec(content);
           popupApp.getSidImage(match[1]);
+        } else {
+          popupApp.updateSidImageOnError();
+          if (gender === '') {
+            popupApp.applyPopupTheme('neutral');
+          }
         }
         if (content.match(regExDate)) {
           var dates = regExDate.exec(content);
           document.getElementById('birthdate').textContent =
             popupApp.calculateYears(dates[1]) + ' years (' + dates[1] + ')';
         }
-        if (content.match(regExGender)) {
-          var gender = regExGender.exec(content);
-          if (gender[1] === 'Féminin') {
-            document.body.classList.add('girl');
-          } else {
-            document.body.classList.add('boy');
-          }
-        }
       });
       oReq.addEventListener('error', function () {
         popupApp.updateSidImageOnError();
+        popupApp.applyPopupTheme('neutral');
       });
       oReq.addEventListener('timeout', function () {
         popupApp.updateSidImageOnError();
+        popupApp.applyPopupTheme('neutral');
       });
       oReq.open('GET', url);
       oReq.setRequestHeader('Authorization', 'Basic ' +
