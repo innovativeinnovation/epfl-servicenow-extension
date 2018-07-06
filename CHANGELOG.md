@@ -1,6 +1,15 @@
 Changelog
 =========
 
+### v1.7.1 / 2018-07-06
+
+  - Fix empty name in popup
+  - Fix empty photo with SID
+  - Fix async problems with gender
+  - Fix function getPeopleImage in popup (new url)
+  - Fix typo
+  - Move to david-dm (watching deps)
+
 ### v1.7.0 / 2018-04-12
 
   - Add badge GitHub tag on readme
