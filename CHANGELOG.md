@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v1.7.2 / 2018-07-09
+
+  - Fix activities history theme
+  - Fix favorites menu theme
+  - Improve contributing
+
 ### v1.7.1 / 2018-07-06
 
   - Fix empty name in popup
