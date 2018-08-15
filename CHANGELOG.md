@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v1.8.0 / 2018-08-15
+
+  - Add marine theme
+  - Add hunter theme
+
 ### v1.7.2 / 2018-07-09
 
   - Fix activities history theme
