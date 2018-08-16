@@ -12,10 +12,6 @@ build:
   - 'sass'
   - 'replace'
 
-package:
-  - 'build'
-  - 'compress'
-
 serve:
   - 'build'
   - 'watch'
