@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.8.1 / 2018-08-17
+
+  - Fix option page layout
+  - Remove task `package`
+  - Improve contributing
+  - Update dev dependencies
+
 ### v1.8.0 / 2018-08-15
 
   - Add marine theme
