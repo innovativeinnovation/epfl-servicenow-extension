@@ -4,13 +4,22 @@
   <meta charset="utf-8" />
   <title>EPFL ServiceNow Extension</title>
   <style>
-    body: { padding: 10px; }
+    .choice {
+      line-height: 30px;
+    }
+    #theme {
+      width: 150px;
+    }
+    #save {
+      text-align: center;
+      width: 50px;
+    }
   </style>
 </head>
 
 <body>
-  Choose color theme:
-  <select id="theme">
+  <span class="choice">Choose color theme:</span>
+  <select id="theme" class="browser-style">
     <option value="none">No theme</option>
     <option value="halloween">Halloween</option>
     <option disabled>──────────</option>
@@ -35,7 +44,7 @@
   <br />
   <div id="status" style="color:green"></div>
   <br />
-  <button id="save">Save</button>
+  <button id="save" class="browser-style">Save</button>
 
   <script src="js/options.js"></script>
 </body>
