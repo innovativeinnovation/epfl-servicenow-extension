@@ -24,7 +24,7 @@
     },
 
     getSciper: function (callback) {
-      chrome.tabs.query({active: true, currentWindow: true}, function (tab) {
+      chrome.tabs.query({ active: true, currentWindow: true }, function (tab) {
         if (typeof tab[0] === 'undefined') {
           setTimeout(this.getSciper(), 1000);
         } else {
