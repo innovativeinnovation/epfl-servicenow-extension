@@ -8,10 +8,10 @@ Setup
 -----
 
 ```bash
-git clone git@github.com:epfl-devrun/epfl-servicenow-extension.git
+git clone git@github.com:innovativeinnovation/epfl-servicenow-extension.git
 cd epfl-servicenow-extension
 gem install sass
-npm install
+npm i
 ```
 
 Then, you need to create a `secret.json` file in the project main folder with
@@ -91,6 +91,7 @@ License
 
 Apache License 2.0
 
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
+Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.  
+Modified work (c) William Belle, 2018.
 
 See the [LICENSE](LICENSE) file for more details.

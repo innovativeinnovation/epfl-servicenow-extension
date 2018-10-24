@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="EPFL ServiceNow Extension" src="https://raw.githubusercontent.com/epfl-devrun/epfl-servicenow-extension/master/docs/readme/readme-logo.png">
+  <img alt="EPFL ServiceNow Extension" src="https://raw.githubusercontent.com/innovativeinnovation/epfl-servicenow-extension/master/docs/readme/readme-logo.png">
 </p>
 
 <p align="center">
@@ -7,17 +7,17 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/epfl-devrun/epfl-servicenow-extension">
-    <img alt="Travis Status" src="https://travis-ci.org/epfl-devrun/epfl-servicenow-extension.svg?branch=master">
+  <a href="https://travis-ci.org/innovativeinnovation/epfl-servicenow-extension">
+    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/epfl-servicenow-extension.svg?branch=master">
   </a>
-  <a href="https://david-dm.org/epfl-devrun/epfl-servicenow-extension">
-    <img alt="Dependency Status" src="https://david-dm.org/epfl-devrun/epfl-servicenow-extension/status.svg"/>
+  <a href="https://david-dm.org/innovativeinnovation/epfl-servicenow-extension">
+    <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/epfl-servicenow-extension/status.svg"/>
   </a>
-  <a href="https://raw.githubusercontent.com/epfl-devrun/epfl-servicenow-extension/master/LICENSE">
+  <a href="https://raw.githubusercontent.com/innovativeinnovation/epfl-servicenow-extension/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
-  <a href='https://github.com/epfl-devrun/epfl-servicenow-extension/tags'>
-    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/epfl-devrun/epfl-servicenow-extension.svg" />
+  <a href='https://github.com/innovativeinnovation/epfl-servicenow-extension/tags'>
+    <img alt="GitHub Tag" src="https://img.shields.io/github/tag/innovativeinnovation/epfl-servicenow-extension.svg" />
   </a>
 </p>
 
@@ -44,7 +44,7 @@ Compatibilities
 Screenshot
 ----------
 
-![screenshot](https://raw.githubusercontent.com/epfl-devrun/epfl-servicenow-extension/master/docs/readme/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/innovativeinnovation/epfl-servicenow-extension/master/docs/readme/screenshot.png)
 
 Contributing
 ------------
@@ -64,6 +64,7 @@ License
 
 Apache License 2.0
 
-(c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
+Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.  
+Modified work (c) William Belle, 2018.
 
 See the [LICENSE](LICENSE) file for more details.

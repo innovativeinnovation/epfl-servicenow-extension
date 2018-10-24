@@ -10,7 +10,7 @@
   ],
   "author": "William Belle <william.belle@gmail.com>",
   "license": "Apache-2.0",
-  "repository": "https://github.com/epfl-devrun/epfl-servicenow-extension.git",
+  "repository": "https://github.com/innovativeinnovation/epfl-servicenow-extension.git",
   "scripts": {
     "build": "grunt build",
     "serve": "grunt serve",
