@@ -1,0 +1,236 @@
+//
+// Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.
+// Modified work (c) William Belle, 2018.
+// See the LICENSE file for more details.
+//
+
+//
+// Navbar
+//
+.sn-frameset-header
+  background: $color
+
+.navpage-layout .navbar-divider
+  background: $color
+
+//
+// Navbar search
+//
+.sn-frameset-header .sysparm-search-icon:hover:before
+  color: $color-light
+
+.sn-frameset-header input#sysparm_search.focus + label span:before
+  color: $color-light
+
+.sn-frameset-header #sysparm_search
+  color: $color-light
+
+.sn-frameset-header #sysparm_search.focus
+  border-color: $color-light
+
+#sysparm_search::-webkit-input-placeholder
+  color: $color-light
+
+#sysparm_search::-moz-placeholder
+  color: $color-light
+
+#sysparm_search:-ms-input-placeholder
+  color: $color-light
+
+#sysparm_search:-moz-placeholder
+  color: $color-light
+
+//
+// Navbar help and cog
+//
+html.compact .sn-frameset-header .navbar-collapse .navpage-header-content .btn.icon-help:hover,
+html.compact .sn-frameset-header .navbar-collapse .navpage-header-content .btn.icon-cog:hover,
+html.compact .sn-frameset-header .navbar-collapse .navpage-header-content .btn.icon-help:active,
+html.compact .sn-frameset-header .navbar-collapse .navpage-header-content .btn.icon-cog:active,
+html.compact .sn-frameset-header .navbar-collapse .navpage-header-content .btn.icon-help:focus,
+html.compact .sn-frameset-header .navbar-collapse .navpage-header-content .btn.icon-cog:focus,
+html.compact .sn-frameset-header .navbar-collapse .navpage-header-content .btn.icon-cog.state-selected,
+html.compact .sn-frameset-header .navbar-collapse .navpage-header-content .btn.icon-help.state-selected
+  color: $color-light
+
+//
+// Aside
+//
+.navpage-nav
+  background-color: $color
+
+.sn-aside.sn-aside_themed
+  background-color: $color
+  color: $color-light
+
+.sn-pane.sn-pane_left
+  border-right: 1px solid $color
+
+.sn-pane-footer .sn-pane-action,
+.sn-pane-footer .sn-pane-action:focus
+  color: $color
+
+.sn-pane-footer
+  background-color: $color-light
+
+.navpage-nav-collapsed .magellan_navigator .sn-pane-footer .sn-pane-footer-content .sn-pane-action
+  color: $color
+
+//
+// Aside filter
+//
+.sn-live-search_themed.sn-live-search
+  background-color: $color-light
+
+.sn-live-search_themed.sn-live-search .input-group-addon-transparent.icon-filter,
+.sn-live-search_themed.sn-live-search .input-group-addon-transparent.icon-search
+  color: $color
+
+.sn-live-search_themed.sn-live-search .sn-live-search-flex .form-control,
+.sn-live-search_themed.sn-live-search .sn-live-search-flex .form-control:focus
+  color: $color
+  border-color: $color
+
+.navpage-nav-collapsed .magellan_navigator .sn-live-search .input-group-transparent .icon-filter,
+.navpage-nav-collapsed .magellan_navigator .sn-live-search .input-group-transparent .icon-filter:focus
+  color: $color
+
+#filter::-webkit-input-placeholder
+  color: $color
+
+#filter::-moz-placeholder
+  color: $color
+
+#filter:-ms-input-placeholder
+  color: $color
+
+#filter:-moz-placeholder
+  color: $color
+
+//
+// Aside Menu
+//
+.sn-navhub.sn-navhub_themed .sn-navhub-btn:active::before, .sn-navhub.sn-navhub_themed .sn-navhub-btn.state-active::before
+  background: $color-dark
+  color: $color-light
+
+.sn-navhub.sn-navhub_themed .sn-navhub-btn:active:hover::after,
+.sn-navhub.sn-navhub_themed .sn-navhub-btn.state-active:hover::after
+  background-color: $color-light
+
+.sn-navhub.sn-navhub_themed .sn-navhub-btn:active,
+.sn-navhub.sn-navhub_themed .sn-navhub-btn.state-active
+  background-color: $color-dark
+
+.sn-navhub.sn-navhub_themed .sn-navhub-btn::after,
+.sn-navhub.sn-navhub_themed .sn-navhub-btn:active::after,
+.sn-navhub.sn-navhub_themed .sn-navhub-btn.state-active::after
+  background-color: $color-light
+
+.sn-navhub.sn-navhub_themed .sn-navhub-btn::before
+  color: $color-light
+
+.sn-navhub.sn-navhub_themed .sn-navhub-btn
+  background-color: $color
+
+.magellan_navigator .sn-widget-list_indentation .nav-application-tree .sn-aside-group-title
+  background-color: $color-light
+
+.sn-aside.sn-aside_themed .sn-aside-group-title
+  color: $color
+
+.sn-aside.sn-aside_themed div.sn-aside-group-title
+  color: $color-light
+  background-color: $color
+
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-widget-list-item
+  background-color: $color
+
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-widget-list-item .sn-widget-list-title,
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-widget-list-item .sn-widget-list-subtitle
+  color: $color-light
+
+.magellan_navigator .sn-widget-list_indentation .nav-application-tree .sn-widget-list_v2 .sn-aside-group-title
+  background-color: $color
+  color: $color-light
+
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-aside-group-title .sn-aside-btn
+  color: $color-light
+
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-aside-group-title:hover
+  color: $color-light
+
+.sn-navhub.sn-navhub_themed .sn-navhub-btn:active:hover::before, .sn-navhub.sn-navhub_themed .sn-navhub-btn.state-active:hover::before
+  background-color: $color-dark
+  color: $color-light
+
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-widget-list-item:hover .sn-widget-list-title,
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-widget-list-item:hover .sn-widget-list-subtitle,
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-widget-list-item:hover .sn-widget-list-action
+  color: $color-light
+
+.magellan_navigator .sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list_v2 li .sn-widget-list-action
+  color: $color-light
+
+.magellan_navigator .sn-widget-list_indentation .sn-widget-list_v2 .sn-aside-group-title:hover .sn-aside-btn
+  color: $color-light
+
+.sn-aside.sn-aside_themed .sn-widget-list_v2 li, .sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item
+  color: $color-light
+
+.magellan_navigator .sn-application-tree .sn-widget-list_v2 li:hover .sn-widget-list-title,
+.magellan_navigator .sn-application-tree .sn-widget-list_v2 li:hover .sn-widget-list-subtitle,
+.magellan_navigator .sn-application-tree .sn-widget-list_v2 li:hover .sn-widget-list-action,
+.magellan_navigator .sn-application-tree ul .sn-application-tree li .sn-widget-list_v2 li:hover .sn-widget-list-title,
+.magellan_navigator .sn-application-tree ul .sn-application-tree li .sn-widget-list_v2 li:hover .sn-widget-list-subtitle,
+.magellan_navigator .sn-application-tree ul .sn-application-tree li .sn-widget-list_v2 li:hover .sn-widget-list-action,
+.magellan_navigator .nav-favorites-list .sn-widget-list_v2 li:hover .sn-widget-list-title,
+.magellan_navigator .nav-favorites-list .sn-widget-list_v2 li:hover .sn-widget-list-subtitle,
+.magellan_navigator .nav-favorites-list .sn-widget-list_v2 li:hover .sn-widget-list-action,
+.magellan_navigator .nav-favorites-list ul .sn-widget-list_v2 li:hover .sn-widget-list-title,
+.magellan_navigator .nav-favorites-list ul .sn-widget-list_v2 li:hover .sn-widget-list-subtitle,
+.magellan_navigator .nav-favorites-list ul .sn-widget-list_v2 li:hover .sn-widget-list-action,
+.magellan_navigator .nav-favorites-list li .sn-widget-list_v2 li:hover .sn-widget-list-title,
+.magellan_navigator .nav-favorites-list li .sn-widget-list_v2 li:hover .sn-widget-list-subtitle,
+.magellan_navigator .nav-favorites-list li .sn-widget-list_v2 li:hover .sn-widget-list-action
+  color: $color-light
+
+.magellan_navigator .sn-widget-list_indentation .nav-favorites-list .sn-widget-list_v2 .sn-widget-list-item
+  background-color: $color-light
+
+.magellan_navigator .sn-widget-list_indentation .nav-favorites-list .sn-widget-list_v2 .sn-widget-list-item .sn-widget-list-title
+  color: $color
+
+.sn-aside.sn-aside_themed .sn-widget-list_v2 li:active,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 li:focus,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 li:focus:hover,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 li.state-active,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item:active,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item:focus,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item:focus:hover,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item.state-active
+  background-color: $color-dark
+
+.sn-aside.sn-aside_themed .sn-aside-group-title .sn-aside-btn.sn-aside-btn_control
+  color: $color
+
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item span.sn-widget-list-title,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item span.sn-widget-list-subtitle,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item:hover span.sn-widget-list-title,
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-item:hover span.sn-widget-list-subtitle,
+  color: $color
+
+.sn-aside.sn-aside_themed .active-view-history .sn-widget-list_v2 .sn-widget-list-item
+  background-color: $color-light
+
+.sn-aside.sn-aside_themed .sn-widget-list_v2 .sn-widget-list-divider
+  background-color: $color-dark
+
+.sn-aside.sn-aside_themed .sn-widget-textblock
+  color: $color-light
+
+//
+// Iframe
+//
+main iframe
+  border-left: 1px solid $color
