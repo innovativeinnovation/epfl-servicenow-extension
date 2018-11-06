@@ -14,14 +14,14 @@ module.exports = {
     },
     files: [{
       expand: true,
-      cwd: 'src/sass',
-      src: ['**/*.sass'],
+      cwd: 'src/sass/',
+      src: ['themes/*.sass', '*.sass'],
       dest: 'dist/chrome/css/',
       ext: '.css'
     }, {
       expand: true,
-      cwd: 'src/sass',
-      src: ['**/*.sass'],
+      cwd: 'src/sass/',
+      src: ['themes/*.sass', '*.sass'],
       dest: 'dist/firefox/css/',
       ext: '.css'
     }]
