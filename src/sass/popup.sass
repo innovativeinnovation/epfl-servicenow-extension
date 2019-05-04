@@ -32,7 +32,6 @@ body
   height: $card-height
   color: #fff
   padding: 10px
-  text-align: center
 
   span
     display: block
@@ -43,11 +42,17 @@ body
   .right-card
     color: $girl-color
 
+    a
+      color: $girl-color
+
 .boy
   .left-card
     background-color: $boy-color
   .right-card
     color: $boy-color
+
+    a
+      color: $boy-color
 
 .neutral
   .left-card
@@ -59,6 +64,7 @@ body
   width: $left-card-width
   background-color: $neutral-color
   float: left
+  text-align: center
 
 .right-card
   width: $right-card-width
@@ -67,6 +73,13 @@ body
 
   h2
     margin: 0
+    text-align: center
+
+  a
+    vertical-align: super
+
+  img
+    margin-right: 3px
 
 .sid-profile
   width: $sid-profile-width
