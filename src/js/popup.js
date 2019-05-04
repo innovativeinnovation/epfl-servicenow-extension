@@ -133,7 +133,8 @@
     },
 
     getPeopleImage: function (sciper) {
-      var url = 'https://people.epfl.ch/private/common/photos/links/' + sciper;
+      var url = 'https://people.epfl.ch/private/common/photos/links/' +
+        sciper + '.jpg';
       var xhr = new XMLHttpRequest();
       xhr.addEventListener('load', function () {
         popupApp.onPeopleImage(xhr, url);
