@@ -41,11 +41,6 @@ Compatibilities
   * Firefox
   * Opera
 
-Screenshot
-----------
-
-![screenshot](https://raw.githubusercontent.com/innovativeinnovation/epfl-servicenow-extension/master/docs/readme/screenshot.png)
-
 Contributing
 ------------
 
