@@ -1,7 +1,7 @@
 {
   "name": "epfl-servicenow-extension",
   "private": true,
-  "version": "1.8.1",
+  "version": "1.9.0",
   "description": "A custom web extension to quickly retrieve essentials information about users",
   "keywords": [
     "EPFL",
