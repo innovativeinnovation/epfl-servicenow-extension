@@ -1,6 +1,15 @@
 Changelog
 =========
 
+### v1.9.0 / 2019-05-04
+
+  - Add profile link in right card
+  - Rewrite themes to avoid duplication
+  - Fix photo links
+  - Update dev dependencies
+  - Update copyright (transfer from EPFL DevRun)
+  - Remove screenshot
+
 ### v1.8.1 / 2018-08-17
 
   - Fix option page layout
