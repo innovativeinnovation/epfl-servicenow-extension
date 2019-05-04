@@ -166,6 +166,20 @@
       if (data[0] && data[0].firstname && data[0].name) {
         document.getElementById('name').textContent =
           data[0].firstname + ' ' + data[0].name;
+        document.getElementById('google-search').textContent =
+          data[0].firstname + ' ' + data[0].name + ' on Google';
+        document.getElementById('google-search').href =
+          'https://www.google.com/search?q=' + data[0].firstname + ' ' +
+          data[0].name;
+        document.getElementById('social-search').textContent =
+          data[0].firstname + ' ' + data[0].name + ' on Social Searcher';
+        document.getElementById('social-search').href =
+          'https://www.social-searcher.com/search-users/?q6=' +
+          data[0].firstname + ' ' + data[0].name;
+        document.getElementById('people-epfl').textContent =
+          data[0].firstname + ' ' + data[0].name + ' on People';
+        document.getElementById('people-epfl').href =
+          'https://people.epfl.ch/' + data[0].sciper;
       }
     }
   };
