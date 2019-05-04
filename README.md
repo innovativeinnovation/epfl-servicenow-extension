@@ -33,7 +33,7 @@ Features
 
   * Quick access to user informations
   * Multiple colors themes for ServiceNow
-  
+
 Compatibilities
 ---------------
 
@@ -65,6 +65,6 @@ License
 Apache License 2.0
 
 Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.  
-Modified work (c) William Belle, 2018.
+Modified work (c) William Belle, 2018-2019.
 
 See the [LICENSE](LICENSE) file for more details.

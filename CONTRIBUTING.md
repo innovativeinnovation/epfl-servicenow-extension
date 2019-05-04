@@ -67,7 +67,7 @@ Firefox:
   4. Select "Load Temporary Add-on"
   5. Navigate to the project `epfl-servicenow-extension/dist/firefox` and
      click open
-  
+
 Opera:
 
   1. View -> Show Extensions
@@ -92,6 +92,6 @@ License
 Apache License 2.0
 
 Original work (c) ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, VPSI, 2017-2018.  
-Modified work (c) William Belle, 2018.
+Modified work (c) William Belle, 2018-2019.
 
 See the [LICENSE](LICENSE) file for more details.
