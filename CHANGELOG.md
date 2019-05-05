@@ -1,7 +1,7 @@
 Changelog
 =========
 
-### v1.9.0 / 2019-05-04
+### v1.9.0 / 2019-05-05
 
   - Add profile link in right card
   - Rewrite themes to avoid duplication
