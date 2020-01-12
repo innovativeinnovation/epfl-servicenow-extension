@@ -15,6 +15,7 @@
     "js": [ "js/contentscript.js" ],
     "matches": [
       "*://support.epfl.ch/*",
+      "*://epfl.service-now.com/*",
       "*://infowww.epfl.ch/*"
     ],
     "run_at": "document_end"
@@ -38,6 +39,7 @@
     "tabs",
     "storage",
     "*://support.epfl.ch/*",
+    "*://epfl.service-now.com/*",
     "*://people.epfl.ch/*",
     "*://search.epfl.ch/*",
     "*://infowww.epfl.ch/*"
