@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.9.1 / 2020-01-13
+
+  - Add new host permission `epfl.service-now.com`
+  - Replace module `grunt-replace` with `grunt-replace-regex`
+  - Test with Node.js 12
+  - Update dev dependencies
+
 ### v1.9.0 / 2019-05-05
 
   - Add profile link in right card
