@@ -17,9 +17,9 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "eslint-config-standard": "^14.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^9.1.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "grunt": "^1.0.4",
@@ -29,7 +29,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-eslint": "^22.0.0",
     "grunt-replace-regex": "^1.0.3",
-    "load-grunt-config": "^3.0.0"
+    "load-grunt-config": "^3.0.1"
   },
   "dependencies": {}
 }
