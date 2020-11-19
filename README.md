@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/innovativeinnovation/epfl-servicenow-extension">
-    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/epfl-servicenow-extension.svg?branch=master">
+  <a href="https://travis-ci.com/innovativeinnovation/epfl-servicenow-extension">
+    <img alt="Travis Status" src="https://travis-ci.com/innovativeinnovation/epfl-servicenow-extension.svg?branch=master">
   </a>
   <a href="https://david-dm.org/innovativeinnovation/epfl-servicenow-extension">
     <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/epfl-servicenow-extension/status.svg"/>
