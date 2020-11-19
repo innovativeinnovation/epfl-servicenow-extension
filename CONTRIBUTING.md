@@ -76,6 +76,14 @@ Opera:
   4. Navigate to the project `epfl-servicenow-extension/dist/chrome` and
      click select
 
+Edge Chromium:
+
+  1. `...` -> Extensions
+  2. Click on "Developer Mode" button (if not already)
+  3. Click on "Load Unpacked"
+  4. Navigate to the project `epfl-servicenow-extension/dist/chrome` and
+     click select
+
 Release
 -------
 
