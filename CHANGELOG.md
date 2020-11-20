@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v1.9.2 / 2020-11-20
+
+  - Update dev dependencies
+  - Migrate travis-ci.org to .com
+  - Add Edge Chromium installation guide
+
 ### v1.9.1 / 2020-01-13
 
   - Add new host permission `epfl.service-now.com`
