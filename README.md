@@ -10,9 +10,6 @@
   <a href="https://github.com/innovativeinnovation/epfl-servicenow-extension/actions">
     <img alt="Build Status" src="https://github.com/innovativeinnovation/epfl-servicenow-extension/workflows/Build/badge.svg?branch=master">
   </a>
-  <a href="https://david-dm.org/innovativeinnovation/epfl-servicenow-extension">
-    <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/epfl-servicenow-extension/status.svg"/>
-  </a>
   <a href="https://raw.githubusercontent.com/innovativeinnovation/epfl-servicenow-extension/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
   </a>
