@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v1.9.3 / 2021-04-13
+
+  - Update and clean dev dependencies
+  - Migrate from Travis CI to GitHub Actions
+  - Remove badge dependencies
+
 ### v1.9.2 / 2020-11-20
 
   - Update dev dependencies
