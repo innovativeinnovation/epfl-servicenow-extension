@@ -154,7 +154,7 @@
     },
 
     getPeopleInfo: function (sciper) {
-      var url = 'https://search.epfl.ch/json/ws_search.action?q=' + sciper;
+      var url = 'https://search-api.epfl.ch/api/ldap?q=' + sciper;
       var xhr = new XMLHttpRequest();
       xhr.addEventListener('load', popupApp.onPeopleInfo);
       xhr.open('GET', url);
