@@ -61,4 +61,3 @@ typings/
 .sass-cache/
 dist/
 package/
-secret.json
