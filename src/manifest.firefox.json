@@ -15,8 +15,7 @@
     "js": [ "js/contentscript.js" ],
     "matches": [
       "*://support.epfl.ch/*",
-      "*://epfl.service-now.com/*",
-      "*://infowww.epfl.ch/*"
+      "*://epfl.service-now.com/*"
     ],
     "run_at": "document_end"
   }],
@@ -41,8 +40,7 @@
     "*://support.epfl.ch/*",
     "*://epfl.service-now.com/*",
     "*://people.epfl.ch/*",
-    "*://search.epfl.ch/*",
-    "*://infowww.epfl.ch/*"
+    "*://search.epfl.ch/*"
   ],
 
   "icons": {
