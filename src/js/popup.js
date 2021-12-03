@@ -10,9 +10,6 @@
 (function () {
   var popupApp = {
 
-    username: 'USERNAME',
-    password: 'PASSWORD',
-
     start: function () {
       this.initImgProfile();
       this.getSciper(this.updateContent);
