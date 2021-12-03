@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v2.0.0 / 2021-12-03
+
+  - Migrate to new people api
+  - Remove sid profile in popup
+
 ### v1.9.3 / 2021-04-13
 
   - Update and clean dev dependencies
