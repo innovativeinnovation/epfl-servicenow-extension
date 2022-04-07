@@ -9,7 +9,7 @@
 
 module.exports = {
   options: {
-    configFile: './.eslintrc.json'
+    overrideConfigFile: './.eslintrc.json'
   },
   target: ['**/*.js', '!node_modules/**/*.js', '!dist/**/*.js']
 };
