@@ -1,7 +1,7 @@
 {
   "name": "EPFL ServiceNow Extension",
   "description": "A custom web extension to quickly retrieve essentials information about users",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "version": "2.0.0",
 
   "content_scripts": [{
@@ -14,11 +14,10 @@
   }],
 
   "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
+    "page": "options.html"
   },
 
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "images/icon-16.png",
       "48": "images/icon-48.png",
@@ -29,7 +28,10 @@
 
   "permissions": [
     "tabs",
-    "storage",
+    "storage"
+  ],
+
+  "host_permissions": [
     "*://support.epfl.ch/*",
     "*://epfl.service-now.com/*",
     "*://people.epfl.ch/*",
@@ -42,7 +44,12 @@
     "128": "images/icon-128.png"
   },
 
-  "web_accessible_resources": [
-    "css/themes/*.css"
-  ]
+  "web_accessible_resources": [{
+    "resources": [
+      "css/themes/*.css"
+    ],
+    "matches": [
+      "<all_urls>"
+    ]
+  }]
 }

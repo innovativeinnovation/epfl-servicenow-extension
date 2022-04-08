@@ -18,7 +18,7 @@
     initImgProfile: function () {
       var images = document.getElementsByClassName('img-profile');
       for (var i = 0; i < images.length; i++) {
-        images[i].src = chrome.extension.getURL('images/default-profile.jpg');
+        images[i].src = chrome.runtime.getURL('images/default-profile.jpg');
       }
     },
 
@@ -66,7 +66,7 @@
         document.getElementById('people-image').src = url;
       } else {
         document.getElementById('people-image').src =
-          chrome.extension.getURL('images/no-photo.jpg');
+          chrome.runtime.getURL('images/no-photo.jpg');
       }
     },
 
