@@ -14,18 +14,6 @@ gem install sass
 npm i
 ```
 
-Then, you need to create a `secret.json` file in the project main folder with
-your Tequila identity.
-
-```json
-{
-  "username": "...",
-  "password": "..."
-}
-```
-
-:warning: Never commit this file.
-
 Test
 ----
 
