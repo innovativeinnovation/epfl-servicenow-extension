@@ -37,6 +37,7 @@ Compatibilities
   * Chrome
   * Firefox
   * Opera
+  * Edge Chromium
 
 Contributing
 ------------
