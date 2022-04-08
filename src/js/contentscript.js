@@ -50,7 +50,7 @@ function applyThemeOption () {
     }
 
     var link = document.createElement('link');
-    link.href = chrome.extension.getURL(
+    link.href = chrome.runtime.getURL(
       'css/themes/' + color.colorTheme + '.css'
     );
     link.type = 'text/css';
