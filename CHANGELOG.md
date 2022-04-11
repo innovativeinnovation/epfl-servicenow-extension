@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v3.0.0 / 2022-04-11
+
+  - Migrate to Manifest v3 for Chrome
+  - Update dev dependencies
+  - Clean infowww permissions
+
 ### v2.0.0 / 2021-12-03
 
   - Migrate to new people api
